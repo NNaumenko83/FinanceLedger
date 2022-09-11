@@ -1,0 +1,35 @@
+.footer {
+	background-color: $fifth-background-color;
+}
+
+.container {
+}
+.footer__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	height: 110px;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.soc-links-list {
+	display: flex;
+}
+
+.footer__soc-links-list {
+	margin: 0 auto 9px;
+}
+
+.list {
+}
+.soc-links-list__item:not(:last-child) {
+	margin-right: 25px;
+}
+.soc-links-list__link {
+}
+.link {
+}
+.footer__text {
+}

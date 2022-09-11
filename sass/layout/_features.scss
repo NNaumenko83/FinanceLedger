@@ -1,0 +1,33 @@
+.features__container {
+	background-color: $second-background-color;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+
+.features__pre-text {
+	font-size: 18px;
+	line-height: 1.66;
+	margin-bottom: 5px;
+}
+.features__title {
+	@extend %main-title;
+
+	margin-bottom: 25px;
+}
+.features__after-text {
+	font-size: 16px;
+	line-height: 1.6;
+	margin-bottom: 14px;
+}
+.features__button {
+	color: currentColor;
+	width: 158px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	font-size: 16px;
+	line-height: 1.6;
+	border: 1px solid #ffffff;
+	background-color: transparent;
+}
