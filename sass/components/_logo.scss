@@ -1,13 +1,22 @@
-.logo {
+.logo-link {
 	display: flex;
-	align-items: center;
+	justify-content: center;
 
 	font-size: 32px;
 	line-height: 1.32;
 	margin-bottom: 10px;
+
+	@media screen and (max-width: 767.5px) {
+		flex-wrap: wrap;
+	}
+
+	@include tablet {
+		font-size: 35px;
+		line-height: 1.21;
+	}
 }
 
-.logo::before {
+.logo-link::before {
 	content: "";
 	display: inline-block;
 	align-self: flex-end;
@@ -17,11 +26,19 @@
 	background-image: url(../images/fa-solid_book-open_min.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
+	@include tablet {
+		align-self: center;
+		margin-right: 10px;
+	}
 }
 
 .logo__first-word {
 	color: $logo-first-word-color;
 	margin-right: 5px;
+
+	@include tablet {
+		margin-right: 14px;
+	}
 }
 .logo__second-word {
 	color: $logo-second-word-color;

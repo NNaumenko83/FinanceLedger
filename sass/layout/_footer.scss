@@ -1,18 +1,23 @@
 .footer {
 	background-color: $fifth-background-color;
-}
-
-.container {
-}
-.footer__container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
 	height: 110px;
 
 	padding-top: 20px;
 	padding-bottom: 20px;
+
+	@include tablet {
+		padding-bottom: 16px;
+		font-size: 18px;
+		line-height: 1.56;
+	}
+}
+
+// .container {
+// }
+.footer__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .soc-links-list {
 	display: flex;
@@ -24,6 +29,12 @@
 
 .list {
 }
+
+.soc-links-list__item {
+	width: 35px;
+	height: 35px;
+}
+
 .soc-links-list__item:not(:last-child) {
 	margin-right: 25px;
 }

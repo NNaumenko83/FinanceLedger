@@ -1,26 +1,46 @@
 .contact {
-}
-.container {
-}
-.contact__container {
+	background-color: $fourth-background-color;
 	color: $second-text-color;
+
+	@include tablet {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.contact__picture {
+	margin: 0 auto;
+
+	@include tablet {
+		width: 384px;
+	}
+}
+
+.contact__container {
 	padding-top: 26px;
 	padding-right: 30px;
 	padding-left: 30px;
-
 	padding-bottom: 30px;
 
-	background-color: $fourth-background-color;
+	@include tablet {
+		width: 384px;
+		margin: 0;
+	}
 }
+
 .contact__text {
 	font-weight: 300;
 	font-size: 38px;
 	line-height: 1.26;
 
 	margin-bottom: 34px;
+
+	@include tablet {
+		font-size: 38px;
+		line-height: 1.26;
+	}
 }
-.form {
-}
+
 .form__input {
 	width: 100%;
 	height: 40px;
@@ -34,6 +54,11 @@
 		line-height: 1.44;
 
 		color: $placeholder-text-color;
+
+		@include tablet {
+			font-size: 18px;
+			line-height: 1.28;
+		}
 	}
 }
 
@@ -51,6 +76,4 @@
 	line-height: 1.38;
 	color: $primary-text-color;
 	background-color: $second-background-color;
-}
-.button {
 }

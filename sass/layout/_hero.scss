@@ -1,33 +1,61 @@
 .hero {
-	display: flex;
-
 	text-align: center;
 
-	padding-top: 144px;
+	@media screen and (max-width: 768) {
+		padding-top: 144px;
+	}
 
 	height: 533px;
-	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/Hero-mobile.jpg);
+	background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/Mobile/Hero-mobile.jpg);
 
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-}
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-	.hero {
-		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/Hero_mobile@2x.jpg);
+	@media screen and (max-width: 767.5px) {
+		padding-top: 144px;
+	}
+
+	@include retina {
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+			url(../images/Mobile/Hero_mobile@2x.jpg);
+	}
+
+	@include tablet {
+		height: 1024px;
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/Tablet/Hero-min.jpg);
+		@include retina {
+			background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+				url(../images/Tablet/Hero@2x-min.jpg);
+		}
+	}
+
+	@include desktop {
+		height: 768px;
+		max-width: 1360px;
+		margin: 0 auto;
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/Desktop/Hero-min.jpg);
+		@include retina {
+			background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+				url(../images/Desktop/Hero@2x-min.jpg);
+		}
 	}
 }
 
 .hero__container {
 	display: flex;
 	margin: 0 auto;
+
 	flex-direction: column;
 	align-items: center;
+
+	@include tablet {
+		height: 100%;
+		justify-content: center;
+	}
 }
 
 .hero__title {
-	max-width: 241px;
 	margin-bottom: 16px;
 
 	font-weight: 300;
@@ -35,9 +63,17 @@
 	line-height: 1.27;
 
 	color: #e9e9e9;
+
+	@media screen and (max-width: 767.5px) {
+		max-width: 241px;
+	}
+
+	@include tablet {
+		font-size: 55px;
+		line-height: 1.2;
+	}
 }
-// .title {
-// }
+
 .hero__text {
 	max-width: 246px;
 	margin-bottom: 27px;
@@ -58,17 +94,3 @@
 	text-align: center;
 	color: currentColor;
 }
-
-// .button {
-// }
-
-// .about {
-// }
-// .about__list {
-// }
-// .list {
-// }
-// .visually-hidden {
-// }
-// .about__item {
-// }

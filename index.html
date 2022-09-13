@@ -17,7 +17,7 @@
 	<body>
 		<header class="header">
 			<div class="container header__container">
-				<a href="" class="logo link">
+				<a href="" class="logo-link link">
 					<span class="logo__first-word">Finance</span><span class="logo__second-word">Ledger</span></a
 				>
 				<nav class="navigation">
@@ -82,12 +82,29 @@
 			</section>
 
 			<section class="features">
-				<picture class="features__team-photo">
+				<picture>
+					<source
+						srcset="./images/Desktop/Land_command-min.jpg, ./images/Desktop/Land_command@2x-min.jpg 2x"
+						media="(min-width: 1360px)"
+					/>
+
+					<source
+						srcset="./images/Tablet/Land_command-min.jpg, ./images/Tablet/Land_command@2x-min.jpg 2x"
+						media="(min-width: 768px)"
+					/>
+
 					<source
 						srcset="./images/Mobile/Land_command-min.jpg, ./images/Mobile/Land_command@2x-min.jpg 2x"
 						media="(max-width: 767.5px)"
 					/>
-					<img src="./images/Mobile/Land_command-min.jpg" alt="Team photo" width="320" height="220" />
+
+					<img
+						src="./images/Mobile/Land_command-min.jpg"
+						alt="Team photo"
+						width="384"
+						height="564"
+						class="features__team-photo"
+					/>
 				</picture>
 				<div class="container features__container">
 					<p class="features__pre-text">What you are looking for</p>
@@ -110,51 +127,142 @@
 					</p>
 					<ul class="cases-list list">
 						<li class="cases-list__item">
+							<picture>
+								<source
+									srcset="./images/Desktop/Cases-1-min.jpg, ./images/Desktop/Cases-1@2x-min.jpg 2x"
+									media="(min-width:1360px)"
+								/>
+
+								<source
+									srcset="./images/Tablet/Cases-1-min.jpg, ./images/Tablet/Cases-1@2x-min.jpg 2x"
+									media="(min-width:768px)"
+								/>
+
+								<source
+									srcset="./images/Mobile/Cases-1-min.jpg, ./images/Mobile/Cases-1@2x-min.jpg 2x"
+									media="(max-width:767.5px)"
+								/>
+
+								<img src="./images/Mobile/Cases-1-min.jpg" alt="Team photo" width="320" height="214" />
+							</picture>
+						</li>
+						<li class="cases-list__item">
 							<picture
-								><source srcset="./images/Mobile/Cases-1-min.jpg, ./images/Mobile/Cases-1@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Cases-1-min.jpg" alt="Team photo" width="264" height="176"
+								><source
+									srcset="./images/Desktop/Cases-2-min.jpg, ./images/Desktop/Cases-2@2x-min.jpg 2x"
+									media="(min-width:1360px)" />
+
+								<source
+									srcset="./images/Tablet/Cases-2-min.jpg, ./images/Tablet/Cases-2@2x-min.jpg 2x"
+									media="(min-width:768px)" />
+
+								<source
+									srcset="./images/Mobile/Cases-2-min.jpg, ./images/Mobile/Cases-2@2x-min.jpg 2x"
+									media="(max-width:767.5px)" />
+
+								<img src="./images/Mobile/Cases-2-min.jpg" alt="Team photo" width="320" height="214"
+							/></picture>
+						</li>
+						<li class="cases-list__item">
+							<picture>
+								<source
+									srcset="./images/Desktop/Cases-3-min.jpg, ./images/Desktop/Cases-3@2x-min.jpg 2x"
+									media="(min-width:1360px)" />
+
+								<source
+									srcset="./images/Tablet/Cases-3-min.jpg, ./images/Tablet/Cases-3@2x-min.jpg 2x"
+									media="(min-width:768px)" />
+
+								<source
+									srcset="./images/Mobile/Cases-3-min.jpg, ./images/Mobile/Cases-3@2x-min.jpg 2x"
+									media="(max-width:767.5px)" />
+
+								<img src="./images/Mobile/Cases-3-min.jpg" alt="Team photo" width="320" height="214"
+							/></picture>
+						</li>
+						<li class="cases-list__item">
+							<picture>
+								<source
+									srcset="./images/Desktop/Cases-4-min.jpg, ./images/Desktop/Cases-4@2x-min.jpg 2x"
+									media="(min-width:1360px)" />
+
+								<source
+									srcset="./images/Tablet/Cases-4-min.jpg, ./images/Tablet/Cases-4@2x-min.jpg 2x"
+									media="(min-width:768px)" />
+
+								<source
+									srcset="./images/Mobile/Cases-4-min.jpg, ./images/Mobile/Cases-4@2x-min.jpg 2x"
+									media="(max-width:767.5px)" />
+
+								<img src="./images/Mobile/Cases-4-min.jpg" alt="Team photo" width="320" height="214"
 							/></picture>
 						</li>
 						<li class="cases-list__item">
 							<picture
-								><source srcset="./images/Mobile/Cases-2-min.jpg, ./images/Mobile/Cases-2@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Cases-1-min.jpg" alt="Team photo" width="264" height="176"
+								><source
+									srcset="./images/Desktop/Cases-5-min.jpg, ./images/Desktop/Cases-5@2x-min.jpg 2x"
+									media="(min-width:1360px)" />
+
+								<source
+									srcset="./images/Tablet/Cases-5-min.jpg, ./images/Tablet/Cases-5@2x-min.jpg 2x"
+									media="(min-width:768px)" />
+
+								<source
+									srcset="./images/Mobile/Cases-5-min.jpg, ./images/Mobile/Cases-5@2x-min.jpg 2x"
+									media="(max-width:767.5px)" />
+
+								<img src="./images/Mobile/Cases-5-min.jpg" alt="Team photo" width="320" height="214"
+							/></picture>
+						</li>
+						<li class="cases-list__item">
+							<picture>
+								<source
+									srcset="./images/Desktop/Cases-6-min.jpg, ./images/Desktop/Cases-6@2x-min.jpg 2x"
+									media="(min-width:1360px)" />
+
+								<source
+									srcset="./images/Tablet/Cases-6-min.jpg, ./images/Tablet/Cases-6@2x-min.jpg 2x"
+									media="(min-width:768px)" />
+
+								<source
+									srcset="./images/Mobile/Cases-6-min.jpg, ./images/Mobile/Cases-6@2x-min.jpg 2x"
+									media="(max-width:767.5px)" />
+
+								<img src="./images/Mobile/Cases-6-min.jpg" alt="Team photo" width="320" height="214"
 							/></picture>
 						</li>
 						<li class="cases-list__item">
 							<picture
-								><source srcset="./images/Mobile/Cases-3-min.jpg, ./images/Mobile/Cases-3@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Cases-1-min.jpg" alt="Team photo" width="264" height="176"
+								><source
+									srcset="./images/Desktop/Cases-7-min.jpg, ./images/Desktop/Cases-7@2x-min.jpg 2x"
+									media="(min-width:1360px)" />
+
+								<source
+									srcset="./images/Tablet/Cases-7-min.jpg, ./images/Tablet/Cases-7@2x-min.jpg 2x"
+									media="(min-width:768px)" />
+
+								<source
+									srcset="./images/Mobile/Cases-7-min.jpg, ./images/Mobile/Cases-7@2x-min.jpg 2x"
+									media="(max-width:767.5px)" />
+
+								<img src="./images/Mobile/Cases-7-min.jpg" alt="Team photo" width="320" height="214"
 							/></picture>
 						</li>
 						<li class="cases-list__item">
 							<picture
-								><source srcset="./images/Mobile/Cases-4-min.jpg, ./images/Mobile/Cases-4@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Cases-1-min.jpg" alt="Team photo" width="264" height="176"
-							/></picture>
-						</li>
-						<li class="cases-list__item">
-							<picture
-								><source srcset="./images/Mobile/Cases-5-min.jpg, ./images/Mobile/Cases-5@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Cases-1-min.jpg" alt="Team photo" width="264" height="176"
-							/></picture>
-						</li>
-						<li class="cases-list__item">
-							<picture
-								><source srcset="./images/Mobile/Cases-6-min.jpg, ./images/Mobile/Cases-6@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Cases-1-min.jpg" alt="Team photo" width="264" height="176"
-							/></picture>
-						</li>
-						<li class="cases-list__item">
-							<picture
-								><source srcset="./images/Mobile/Cases-7-min.jpg, ./images/Mobile/Cases-7@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Cases-1-min.jpg" alt="Team photo" width="264" height="176"
-							/></picture>
-						</li>
-						<li class="cases-list__item">
-							<picture
-								><source srcset="./images/Mobile/Cases-8-min.jpg, ./images/Mobile/Cases-8@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Cases-1-min.jpg" alt="Team photo" width="264" height="176"
+								><source
+									srcset="./images/Desktop/Cases-8-min.jpg, ./images/Desktop/Cases-8@2x-min.jpg 2x"
+									media="(min-width:1360px)" />
+
+								<source
+									srcset="./images/Tablet/Cases-8-min.jpg, ./images/Tablet/Cases-8@2x-min.jpg 2x"
+									media="(min-width:768px)" />
+
+								<source
+									srcset="./images/Mobile/Cases-8-min.jpg, ./images/Mobile/Cases-8@2x-min.jpg 2x"
+									media="(max-width:767.5px)" />
+
+								<img src="./images/Mobile/Cases-8-min.jpg" alt="Team photo" width="320" height="214"
 							/></picture>
 						</li>
 					</ul>
@@ -163,8 +271,11 @@
 
 			<section class="blog">
 				<picture
-					><source srcset="./images/Mobile/Blog-min.jpg, ./images/Mobile/Cases-8@2x-min.jpg 2x" />
-					<img src="./images/Mobile/Blog@2x-min.jpg" alt="Team photo" width="320" height="247"
+					><source
+						srcset="./images/Mobile/Blog-min.jpg, ./images/Mobile/Blog@2x-min.jpg 2x"
+						media="(max-width:767.5px)" />
+					<source srcset="./images/Tablet/Blog-min.jpg, ./images/Tablet/Blog@2x-min.jpg 2x" media="(min-width:768px)" />
+					<img src="./images/Mobile/Blog-min.jpg" alt="Team photo" width="384" height="468" class="blog__picture"
 				/></picture>
 				<div class="container blog__container">
 					<p class="blog__pre-text">April 16 2020</p>
@@ -185,9 +296,14 @@
 					<p class="team__after-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</p>
 					<ul class="team-list list">
 						<li class="team-list__item">
-							<picture class="team__picture"
+							<picture
 								><source srcset="./images/Mobile/Team-1-min.jpg, ./images/Mobile/Team-1@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Team-1-min.jpg" alt="Team photo" width="280" height="186"
+								<img
+									src="./images/Mobile/Team-1-min.jpg"
+									alt="Team photo"
+									width="280"
+									height="186"
+									class="team__picture"
 							/></picture>
 							<h3 class="team-list__title">John Doe</h3>
 							<p class="team-list__text">President</p>
@@ -199,9 +315,14 @@
 							</ul>
 						</li>
 						<li class="team-list__item">
-							<picture class="team__picture"
+							<picture
 								><source srcset="./images/Mobile/Team-2-min.jpg, ./images/Mobile/Team-2@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Team-2-min.jpg" alt="Team photo" width="280" height="186"
+								<img
+									src="./images/Mobile/Team-2-min.jpg"
+									alt="Team photo"
+									width="280"
+									height="186"
+									class="team__picture"
 							/></picture>
 							<h3 class="team-list__title">Jane Doe</h3>
 							<p class="team-list__text">Vice President</p>
@@ -215,7 +336,12 @@
 						<li class="team-list__item">
 							<picture
 								><source srcset="./images/Mobile/Team-3-min.jpg, ./images/Mobile/Team-3@2x-min.jpg 2x" />
-								<img src="./images/Mobile/Team-3-min.jpg" alt="Team photo" width="280" height="186"
+								<img
+									src="./images/Mobile/Team-3-min.jpg"
+									alt="Team photo"
+									width="280"
+									height="186"
+									class="team__picture"
 							/></picture>
 							<h3 class="team-list__title">Steve Smith</h3>
 							<p class="team-list__text">Marketing Head</p>
@@ -232,8 +358,14 @@
 
 			<section class="contact">
 				<picture
-					><source srcset="./images/Mobile/Contact-min.jpg, ./images/Mobile/Contact@2x-min.jpg 2x" />
-					<img src="./images/Mobile/Team-3-min.jpg" alt="Team photo" width="320" height="220"
+					><source
+						srcset="./images/Mobile/Contact-min.jpg, ./images/Mobile/Contact@2x-min.jpg 2x"
+						media="(max-width:767.5px)" />
+					<source
+						srcset="./images/Tablet/Contact-min.jpg, ./images/Tablet/Contact@2x-min.jpg 2x"
+						media="(min-width:768px)" />
+
+					<img src="./images/Mobile/Team-3-min.jpg" alt="Team photo" width="384" height="349" class="contact__picture"
 				/></picture>
 				<div class="container contact__container">
 					<p class="contact__text">Request Callback</p>
@@ -249,25 +381,25 @@
 			<div class="container footer__container">
 				<ul class="soc-links-list footer__soc-links-list list">
 					<li class="soc-links-list__item">
-						<a href="" class="soc-links-list__link link"
+						<a href="" class="soc-links-list__link link" rel="noopener nofollow noreferrer"
 							><svg class="soc-link-icon" width="35" height="35">
 								<use href="./images/symbol-defs.svg#icon-facebook"></use></svg
 						></a>
 					</li>
 					<li class="soc-links-list__item">
-						<a href="" class="soc-links-list__link link"
+						<a href="" class="soc-links-list__link link" rel="noopener nofollow noreferrer"
 							><svg class="soc-link-icon" width="35" height="35">
 								<use href="./images/symbol-defs.svg#icon-Twitter"></use></svg
 						></a>
 					</li>
 					<li class="soc-links-list__item">
-						<a href="" class="soc-links-list__link link"
+						<a href="" class="soc-links-list__link link" rel="noopener nofollow noreferrer"
 							><svg class="soc-link-icon" width="35" height="35">
 								<use href="./images/symbol-defs.svg#icon-youtube"></use></svg
 						></a>
 					</li>
 					<li class="soc-links-list__item">
-						<a href="" class="soc-links-list__link link"
+						<a href="" class="soc-links-list__link link" rel="noopener nofollow noreferrer"
 							><svg class="soc-link-icon" width="35" height="35">
 								<use href="./images/symbol-defs.svg#icon-linkedIn"></use></svg
 						></a>
