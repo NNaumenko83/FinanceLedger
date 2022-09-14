@@ -82,30 +82,32 @@
 			</section>
 
 			<section class="features">
-				<picture>
-					<source
-						srcset="./images/Desktop/Land_command-min.jpg, ./images/Desktop/Land_command@2x-min.jpg 2x"
-						media="(min-width: 1360px)"
-					/>
+				<div class="features__thumb">
+					<picture>
+						<source
+							srcset="./images/Desktop/Land_command-min.jpg, ./images/Desktop/Land_command@2x-min.jpg 2x"
+							media="(min-width: 1360px)"
+						/>
 
-					<source
-						srcset="./images/Tablet/Land_command-min.jpg, ./images/Tablet/Land_command@2x-min.jpg 2x"
-						media="(min-width: 768px)"
-					/>
+						<source
+							srcset="./images/Tablet/Land_command-min.jpg, ./images/Tablet/Land_command@2x-min.jpg 2x"
+							media="(min-width: 768px)"
+						/>
 
-					<source
-						srcset="./images/Mobile/Land_command-min.jpg, ./images/Mobile/Land_command@2x-min.jpg 2x"
-						media="(max-width: 767.5px)"
-					/>
+						<source
+							srcset="./images/Mobile/Land_command-min.jpg, ./images/Mobile/Land_command@2x-min.jpg 2x"
+							media="(max-width: 767.5px)"
+						/>
 
-					<img
-						src="./images/Mobile/Land_command-min.jpg"
-						alt="Team photo"
-						width="384"
-						height="564"
-						class="features__team-photo"
-					/>
-				</picture>
+						<img
+							src="./images/Mobile/Land_command-min.jpg"
+							alt="Team photo"
+							width="680"
+							height="460"
+							class="features__team-photo"
+						/>
+					</picture>
+				</div>
 				<div class="container features__container">
 					<p class="features__pre-text">What you are looking for</p>
 					<h2 class="features__title">We provide bespoke solutions</h2>
@@ -270,13 +272,22 @@
 			</section>
 
 			<section class="blog">
-				<picture
-					><source
-						srcset="./images/Mobile/Blog-min.jpg, ./images/Mobile/Blog@2x-min.jpg 2x"
-						media="(max-width:767.5px)" />
-					<source srcset="./images/Tablet/Blog-min.jpg, ./images/Tablet/Blog@2x-min.jpg 2x" media="(min-width:768px)" />
-					<img src="./images/Mobile/Blog-min.jpg" alt="Team photo" width="384" height="468" class="blog__picture"
-				/></picture>
+				<div class="blog__thumb">
+					<picture
+						><source
+							srcset="./images/Desktop/Blog-min.jpg, ./images/Desktop/Blog@2x-min.jpg 2x"
+							media="(min-width:1360px)" />
+						<source
+							srcset="./images/Tablet/Blog-min.jpg, ./images/Tablet/Blog@2x-min.jpg 2x"
+							media="(min-width:768px)" />
+						<source
+							srcset="./images/Mobile/Blog-min.jpg, ./images/Mobile/Blog@2x-min.jpg 2x"
+							media="(max-width:767.5px)" />
+
+						<img src="./images/Mobile/Blog-min.jpg" alt="Team photo" width="680" height="517" class="blog__picture"
+					/></picture>
+				</div>
+
 				<div class="container blog__container">
 					<p class="blog__pre-text">April 16 2020</p>
 					<h2 class="blog__title title">Blog Post One</h2>
@@ -297,12 +308,20 @@
 					<ul class="team-list list">
 						<li class="team-list__item">
 							<picture
-								><source srcset="./images/Mobile/Team-1-min.jpg, ./images/Mobile/Team-1@2x-min.jpg 2x" />
+								><source
+									srcset="./images/Desktop/Team-1-min.jpg, ./images/Mobile/Team-1@2x-min.jpg 2x"
+									media="(min-width:1360px)" />
+								<source
+									srcset="./images/Tablet/Team-1-min.jpg, ./images/Mobile/Team-1@2x-min.jpg 2x"
+									media="(min-width:768px)" />
+								<source
+									srcset="./images/Mobile/Team-1-min.jpg, ./images/Mobile/Team-1@2x-min.jpg 2x"
+									media="(max-width:767.5px)" />
 								<img
 									src="./images/Mobile/Team-1-min.jpg"
 									alt="Team photo"
-									width="280"
-									height="186"
+									width="420"
+									height="280"
 									class="team__picture"
 							/></picture>
 							<h3 class="team-list__title">John Doe</h3>
@@ -316,12 +335,20 @@
 						</li>
 						<li class="team-list__item">
 							<picture
-								><source srcset="./images/Mobile/Team-2-min.jpg, ./images/Mobile/Team-2@2x-min.jpg 2x" />
+								><source
+									srcset="./images/Tablet/Team-2-min.jpg, ./images/Tablet/Team-2@2x-min.jpg 2x"
+									media="(min-width:1360px)" />
+								<source
+									srcset="./images/Tablet/Team-2-min.jpg, ./images/Mobile/Team-2@2x-min.jpg 2x"
+									media="(min-width:768px)" />
+								<source
+									srcset="./images/Mobile/Team-2-min.jpg, ./images/Mobile/Team-2@2x-min.jpg 2x"
+									media="(max-width:767.5px)" />
 								<img
 									src="./images/Mobile/Team-2-min.jpg"
 									alt="Team photo"
-									width="280"
-									height="186"
+									width="420"
+									height="280"
 									class="team__picture"
 							/></picture>
 							<h3 class="team-list__title">Jane Doe</h3>
@@ -335,12 +362,20 @@
 						</li>
 						<li class="team-list__item">
 							<picture
-								><source srcset="./images/Mobile/Team-3-min.jpg, ./images/Mobile/Team-3@2x-min.jpg 2x" />
+								><source
+									srcset="./images/Desktop/Team-3-min.jpg, ./images/Mobile/Team-3@2x-min.jpg 2x"
+									media="(min-width:1360px)" />
+								<source
+									srcset="./images/Tablet/Team-3-min.jpg, ./images/Mobile/Team-3@2x-min.jpg 2x"
+									media="(min-width:768px)" />
+								<source
+									srcset="./images/Mobile/Team-3-min.jpg, ./images/Mobile/Team-3@2x-min.jpg 2x"
+									media="(max-width:767.5px)" />
 								<img
 									src="./images/Mobile/Team-3-min.jpg"
 									alt="Team photo"
-									width="280"
-									height="186"
+									width="420"
+									height="280"
 									class="team__picture"
 							/></picture>
 							<h3 class="team-list__title">Steve Smith</h3>
@@ -357,16 +392,28 @@
 			</section>
 
 			<section class="contact">
-				<picture
-					><source
-						srcset="./images/Mobile/Contact-min.jpg, ./images/Mobile/Contact@2x-min.jpg 2x"
-						media="(max-width:767.5px)" />
-					<source
-						srcset="./images/Tablet/Contact-min.jpg, ./images/Tablet/Contact@2x-min.jpg 2x"
-						media="(min-width:768px)" />
+				<div class="contact__thumb">
+					<picture
+						><source
+							srcset="./images/Desktop/Contact-min.jpg, ./images/Desktop/Contact@2x-min.jpg 2x"
+							media="(min-width:1360px)" />
 
-					<img src="./images/Mobile/Team-3-min.jpg" alt="Team photo" width="384" height="349" class="contact__picture"
-				/></picture>
+						<source
+							srcset="./images/Tablet/Contact-min.jpg, ./images/Tablet/Contact@2x-min.jpg 2x"
+							media="(min-width:768px)" />
+						<source
+							srcset="./images/Mobile/Contact-min.jpg, ./images/Mobile/Contact@2x-min.jpg 2x"
+							media="(max-width:767.5px)" />
+
+						<img
+							src="./images/Mobile/Team-3-min.jpg"
+							alt="Team photo"
+							width="680"
+							height="460"
+							class="contact__picture"
+					/></picture>
+				</div>
+
 				<div class="container contact__container">
 					<p class="contact__text">Request Callback</p>
 					<form class="form">

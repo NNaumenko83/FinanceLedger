@@ -5,6 +5,11 @@
 	color: $second-text-color;
 
 	@include tablet {
+		padding-top: 49px;
+		padding-bottom: 59px;
+	}
+
+	@include desktop {
 		padding-top: 48px;
 		padding-bottom: 59px;
 	}
@@ -30,6 +35,7 @@
 		margin-bottom: 16px;
 	}
 }
+
 .team__title {
 	@extend %main-title;
 	margin-bottom: 35px;
@@ -54,6 +60,12 @@
 		font-size: 17px;
 		line-height: 1.66;
 		margin-bottom: 49px;
+	}
+
+	@include desktop {
+		font-size: 18px;
+		line-height: 1.56;
+		margin-bottom: 45px;
 	}
 }
 
@@ -81,6 +93,10 @@
 
 	@include tablet {
 		margin-bottom: 14px;
+	}
+
+	@include desktop {
+		margin-bottom: 13px;
 	}
 }
 .team-list__title {

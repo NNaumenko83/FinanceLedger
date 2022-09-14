@@ -3,14 +3,12 @@
 	background-color: $second-background-color;
 
 	@include tablet {
-		height: 564px;
 		display: flex;
 		padding: 0;
 		justify-content: center;
 	}
 
 	@include desktop {
-		height: 460px;
 	}
 }
 
@@ -99,11 +97,16 @@
 	}
 }
 
-.features__team-photo {
-	margin: 0 auto;
-
+.features__thumb {
+	@media screen and (max-width: 767.5px) {
+		max-width: 320px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	@include tablet {
+		width: 384px;
+	}
 	@include desktop {
 		width: 680px;
 	}
-	// max-width: 384px;
 }
